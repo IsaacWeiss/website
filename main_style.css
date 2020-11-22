@@ -433,17 +433,20 @@ nav li a:hover, nav li .wsite-menu-item:hover {
   opacity: 0.6;
 }
 
-.desktop-nav .submenu {
+.desktop-nav .submenu { /*TODO: remove desktop-nav */
   display: none;
-  background-color: white;
+  position: absolute;
   color: black;
+  background-color: white;
+  box-shadow: inset 0px 0px 0px 1px;
 }
 
 .submenu li {
   display: block;
+  margin: 0;
 }
 .submenu a {
-  font-size: 12px;
+  font-size: 12.5px;
   font-weight: normal;
 }
 
