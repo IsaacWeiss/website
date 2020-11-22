@@ -64,8 +64,9 @@ p,
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
-  line-height: 1.75;
+  line-height: 1.4;
   text-align: justify;
+  color: #515151;
   margin: 0 auto;
 }
 
@@ -279,13 +280,14 @@ img {
   box-sizing: border-box;
 }
 
-.main-wrap {
+main {
   width: 100%;
   background: #ffffff;
 }
 
-.main-wrap .container {
+main .container {
   padding: 30px 30px;
+  max-width: 1200px;
 }
 
 .footer-wrap {
@@ -395,24 +397,20 @@ img {
   transition: font-size 260ms ease;
 }
 
-.nav, nav {
+nav {
   display: table-cell;
   vertical-align: middle;
 }
 
-.nav ul, nav ul {
+nav ul {
   float: right;
   max-width: calc(100vw - 480px);
   overflow: hidden;
 }
 
-.nav li, nav li {
+nav li {
   display: inline-block;
   margin: 5px 5px 5px 0;
-}
-
-.desktop-nav .submenu-nav {
-  display: none;
 }
 
 nav a {
@@ -433,6 +431,24 @@ nav a {
 
 nav li a:hover, nav li .wsite-menu-item:hover {
   opacity: 0.6;
+}
+
+.desktop-nav .submenu {
+  display: none;
+  background-color: white;
+  color: black;
+}
+
+.submenu li {
+  display: block;
+}
+.submenu a {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.desktop-nav .has-submenu:hover .submenu {
+  display: block;
 }
 
 .mobile-nav {
@@ -505,10 +521,6 @@ body.splash-banner-page .birdseye-header .hamburger span:after {
 body.wsite-checkout-page .birdseye-header,
 body.wsite-native-mobile-editor .birdseye-header {
   position: absolute !important;
-}
-
-.no-header-page .main-wrap {
-  padding-top: 80px;
 }
 
 body.splash-page .banner-wrap {
@@ -619,10 +631,10 @@ form textarea:focus {
   display: inline-block;
   height: auto;
   padding: 0;
-  background-image: none !important;
+  background-image: none;
   background-color: transparent;
-  color: #000000 !important;
-  border: 1px solid #000000 !important;
+  color: #000000;
+  border: 1px solid #000000;
   -webkit-transition: all 100ms ease-in-out;
   -moz-transition: all 100ms ease-in-out;
   -ms-transition: all 100ms ease-in-out;
@@ -638,8 +650,8 @@ form textarea:focus {
   height: auto;
   padding: 14px 30px;
   background: transparent;
-  background-image: none !important;
-  color: inherit !important;
+  background-image: none;
+  color: inherit;
   letter-spacing: 0.03em;
   font-family: 'Montserrat', sans-serif;
   font-size: 12px;
@@ -648,12 +660,12 @@ form textarea:focus {
 }
 
 .wsite-button-large {
-  color: #ffffff !important;
-  border: 1px solid #ffffff !important;
+  color: #ffffff;
+  border: 1px solid #ffffff;
 }
 
 .wsite-button-large:hover {
-  background-color: rgba(255, 255, 255, 0.2) !important;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 @media screen and (max-width: 992px) {
@@ -722,7 +734,7 @@ form textarea:focus {
     -ms-transform: rotate(135deg);
     transform: rotate(135deg);
   }
-  body.splash-page.nav-open .wrapper .main-wrap {
+  body.splash-page.nav-open .wrapper main {
     position: relative;
   }
   label.hamburger {
@@ -905,19 +917,13 @@ form textarea:focus {
   .banner-wrap .container h2 {
     font-size: 50px;
   }
-  .main-wrap .container {
+  main .container {
     padding: 30px 20px;
   }
   .footer-wrap .wsite-footer {
     width: 100%;
     padding: 30px 20px;
     box-sizing: border-box;
-  }
-  .no-header-page .main-wrap {
-    padding-top: 50px;
-  }
-  .no-header-page .birdseye-header {
-    padding: 5px 20px;
   }
   .splash-page .birdseye-header {
     padding: 5px 20px;
