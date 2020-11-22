@@ -42,20 +42,18 @@ a {
 
 h2 {
   color: #000000;
-  font-family: Georgia, serif;
+  font-family: "Crete Round", Georgia, serif;
   font-size: 36px;
-  font-weight: 700;
-  line-height: 1.25;
+  line-height: 1.5;
   margin: 10px auto;
 }
 
 h3 {
   color: #000000;
-  font-family: Georgia, serif;
+  font-family: "Crete Round", Georgia, serif;
   font-size: 22px;
-  font-weight: 700;
-  line-height: 1.25;
-  margin: 10px auto 0;
+  line-height: 1.5;
+  margin: 10px auto;
 }
 
 div.paragraph,
@@ -121,10 +119,8 @@ blockquote:before {
 }
 
 .logo {
-  font-family: Georgia;
+  font-family: "Crete Round", Georgia, serif;
   font-size: 40px;
-  -webkit-text-stroke: .8px black;
-  -text-stroke: .8px black;
 }
 .para {
   text-indent: 30px;
@@ -246,7 +242,7 @@ img {
 
 .banner-wrap h2 {
   color: inherit;
-  font-family: Georgia, serif;
+  font-family: "Crete Round", Georgia, serif;
   font-size: 80px;
   font-weight: 100;
   line-height: 1.15;
