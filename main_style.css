@@ -429,7 +429,7 @@ nav a {
   transition: opacity 300ms ease;
 }
 
-nav li a:hover, nav li .wsite-menu-item:hover {
+nav li a:hover {
   opacity: 0.6;
 }
 
@@ -437,7 +437,7 @@ nav li a:hover, nav li .wsite-menu-item:hover {
   display: none;
   position: absolute;
   color: black;
-  background-color: white;
+  background: white;
   box-shadow: inset 0px 0px 0px 1px;
 }
 
@@ -449,6 +449,11 @@ nav li a:hover, nav li .wsite-menu-item:hover {
   font-size: 12.5px;
   font-weight: normal;
 }
+.submenu a:hover {
+  opacity: 1;
+  color: black; /* overriding other nav links */
+  background: rgba(0, 0, 0, 0.1);
+}
 
 .desktop-nav .has-submenu:hover .submenu {
   display: block;
@@ -458,44 +463,8 @@ nav li a:hover, nav li .wsite-menu-item:hover {
   display: none;
 }
 
-#wsite-menus .wsite-menu {
-  position: relative;
-  background: #ffffff;
-  -webkit-box-shadow: inset 0px 0px 0px 1px #000000;
-  -moz-box-shadow: inset 0px 0px 0px 1px #000000;
-  -ms-box-shadow: inset 0px 0px 0px 1px #000000;
-  box-shadow: inset 0px 0px 0px 1px #000000;
-}
-
-#wsite-menus .wsite-menu li a {
-  background: transparent;
-  color: #000000;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
-  font-weight: normal;
-  line-height: normal;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  border: none;
-}
-
-#wsite-menus .wsite-menu li a:hover {
-  background: rgba(0, 0, 0, 0.05);
-  -webkit-transition: opacity 200ms ease;
-  -moz-transition: opacity 200ms ease;
-  -ms-transition: opacity 200ms ease;
-  transition: opacity 200ms ease;
-}
-
-#wsite-menus .wsite-menu-arrow {
-  display: none;
-}
-
 body.affix .birdseye-header {
   position: fixed;
- /* -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
-  -ms-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);*/
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
   padding: 10px 40px;
 }
@@ -872,9 +841,6 @@ form textarea:focus {
   .mobile-nav li .wsite-menu-wrap li.wsite-nav-current>a.wsite-menu-subitem {
     background: rgba(0, 0, 0, 0.05);
     border: none;
-  }
-  .mobile-nav li .wsite-menu-wrap .wsite-menu-arrow {
-    display: none;
   }
   .mobile-nav li.wsite-menu-item-wrap#active>a.wsite-menu-item,
   .mobile-nav li.wsite-menu-item-wrap>a.wsite-menu-item:hover,
