@@ -411,6 +411,10 @@ img {
   margin: 5px 5px 5px 0;
 }
 
+.desktop-nav .submenu-nav {
+  display: none;
+}
+
 nav a {
   display: block;
   padding: 12px 10px;
