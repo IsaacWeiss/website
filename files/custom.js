@@ -2,19 +2,18 @@ jQuery(function($) {
 
     // Fixed nav
     $.fn.checkHeaderPositioning = function(scrollEl, scrollClass) {
-        var $me = $(this);
 
-        if (!$me.length) {
+        if (!this.length) {
           return;
         }
 
         if($(scrollEl).scrollTop() > 50) {
-            $me.addClass(scrollClass);
+            this.addClass(scrollClass);
         } else if($(scrollEl).scrollTop() === 0) {
-            $me.removeClass(scrollClass);
+            this.removeClass(scrollClass);
         }
     };
-
+  
   // Mobile sidebars
   $.fn.expandableSidebar = function(expandedClass) {
     var $me = this;

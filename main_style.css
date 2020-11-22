@@ -432,6 +432,14 @@ body.full-width-body-off .wsite-footer {
   margin: 5px 5px 5px 0;
 }
 
+.wsite-menu {
+  display: none;
+}
+
+.wsite-menu-wrap:hover > .wsite-menu {
+  display: block;
+}
+
 .nav .wsite-menu-item {
   display: block;
   padding: 12px 10px;
@@ -632,7 +640,7 @@ form label {
 form input,
 form textarea,
 form select {
-  font-family: 'Montserrat', sans-serif;
+  font-family: Roboto, sans-serif;
   font-size: 14px;
   display: block;
   box-sizing: border-box;
