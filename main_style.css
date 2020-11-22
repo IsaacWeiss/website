@@ -223,16 +223,6 @@ img {
   font-size: 150%;
 }
 
-body.header-overlay-on .wsite-header-section:not(.wsite-section-bg-color):before {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 60%;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.15) 40%, rgba(0, 0, 0, 0) 100%);
-}
-
 .banner-wrap {
   position: relative;
   height: 100%;
@@ -296,13 +286,6 @@ body.header-overlay-on .wsite-header-section:not(.wsite-section-bg-color):before
 
 .main-wrap .container {
   padding: 30px 30px;
-}
-
-body.full-width-body-off .banner-wrap .container,
-body.full-width-body-off .main-wrap .container,
-body.full-width-body-off .wsite-footer {
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
 .footer-wrap {
@@ -385,10 +368,6 @@ body.full-width-body-off .wsite-footer {
   vertical-align: middle;
 }
 
-.birdseye-header * {
-  display: block;
-}
-
 .birdseye-header a {
   /*margin-right: 30px;*/
   -webkit-transition: opacity 200ms ease;
@@ -416,36 +395,28 @@ body.full-width-body-off .wsite-footer {
   transition: font-size 260ms ease;
 }
 
-.nav {
+.nav, nav {
   display: table-cell;
   vertical-align: middle;
 }
 
-.nav ul {
+.nav ul, nav ul {
   float: right;
   max-width: calc(100vw - 480px);
   overflow: hidden;
 }
 
-.nav li {
+.nav li, nav li {
   display: inline-block;
   margin: 5px 5px 5px 0;
 }
 
-.wsite-menu {
-  display: none;
-}
-
-.wsite-menu-wrap:hover > .wsite-menu {
-  display: block;
-}
-
-.nav .wsite-menu-item {
+nav a {
   display: block;
   padding: 12px 10px;
   border: 1px solid transparent;
   font-family: 'Roboto', sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bold;
   line-height: 1;
   letter-spacing: 0.05em;
@@ -456,16 +427,12 @@ body.full-width-body-off .wsite-footer {
   transition: opacity 300ms ease;
 }
 
-.nav li .wsite-menu-item:hover {
+nav li a:hover, nav li .wsite-menu-item:hover {
   opacity: 0.6;
 }
 
 .mobile-nav {
   display: none;
-}
-
-#wsite-menus>.wsite-menu-wrap>.wsite-menu .wsite-menu {
-  margin: 0 -1px;
 }
 
 #wsite-menus .wsite-menu {
@@ -530,25 +497,6 @@ body.splash-banner-page .birdseye-header .hamburger span:after {
   background: #000000;
 }
 
-body.affix.alt-nav-on .birdseye-header,
-body.no-header-page.alt-nav-on .birdseye-header,
-body.splash-banner-page.alt-nav-on .birdseye-header {
-  background: rgba(0, 0, 0, 0.9);
-  color: #ffffff;
-  border-color: #ffffff;
-}
-
-body.affix.alt-nav-on .birdseye-header .hamburger span,
-body.affix.alt-nav-on .birdseye-header .hamburger span:before,
-body.affix.alt-nav-on .birdseye-header .hamburger span:after,
-body.no-header-page.alt-nav-on .birdseye-header .hamburger span,
-body.no-header-page.alt-nav-on .birdseye-header .hamburger span:before,
-body.no-header-page.alt-nav-on .birdseye-header .hamburger span:after,
-body.splash-banner-page.alt-nav-on .birdseye-header .hamburger span,
-body.splash-banner-page.alt-nav-on .birdseye-header .hamburger span:before,
-body.splash-banner-page.alt-nav-on .birdseye-header .hamburger span:after {
-  background: #ffffff;
-}
 
 body.wsite-checkout-page .birdseye-header,
 body.wsite-native-mobile-editor .birdseye-header {
@@ -601,14 +549,6 @@ body.splash-page .birdseye-header .wsite-phone {
   font-size: 14px;
   color: rgba(0, 0, 0, 0.6);
   padding-top: 20px;
-}
-
-body.splash-page .birdseye-header .nav .wsite-menu-item {
-  font-size: 14px;
-}
-
-body.splash-page .birdseye-header li#active>.wsite-menu-item {
-  border-color: transparent;
 }
 
 body.splash-page.alt-nav-on .birdseye-header {
@@ -820,10 +760,6 @@ form textarea:focus {
     bottom: -6px;
   }
   
-  .wsite-menu-default a {
-    font-family:"Roboto" !important;
-    font-weight:700 !important;
-  }
   .desktop-nav {
     display: none;
   }
