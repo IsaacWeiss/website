@@ -1,63 +1,6 @@
-ul,
-ol,
-li,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-pre,
-form,
-body,
-html,
-div.paragraph,
-blockquote,
-fieldset,
-input {
+* {
   margin: 0;
   padding: 0;
-}
-
-ul,
-ol,
-li,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-pre,
-form,
-body,
-html,
-p,
-blockquote,
-fieldset,
-input {
-  margin: 0;
-  padding: 0;
-}
-
-input[type='text'],
-input[type='email'],
-textarea,
-select,
-input[type='radio'],
-input[type='checkbox'] {
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  outline: none;
-  text-shadow: none;
-}
-
-textarea {
-  resize: none;
 }
 
 .iframe-container {
@@ -97,11 +40,6 @@ a {
   text-decoration: none;
 }
 
-a img,
-a:hover img {
-  border: none;
-}
-
 h2 {
   color: #000000;
   font-family: Georgia, serif;
@@ -114,26 +52,15 @@ h2 {
 h3 {
   color: #000000;
   font-family: Georgia, serif;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 700;
   line-height: 1.25;
   margin: 10px auto 0;
 }
 
 div.paragraph,
-.para,
-#wsite-search-list div.paragraph {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.75;
-  text-align: justify;
-  margin: 0 auto;
-}
-
 p,
-.para,
-#wsite-search-list p {
+.para {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -143,20 +70,8 @@ p,
 }
 
 div.paragraph a,
-.para a,
-#wsite-search-list div.paragraph a {
-  color: inherit;
-  font-weight: 550;
-  text-decoration: underline;
-  -webkit-transition: opacity 300ms ease-in-out;
-  -moz-transition: opacity 300ms ease-in-out;
-  -ms-transition: opacity 300ms ease-in-out;
-  transition: opacity 300ms ease-in-out;
-}
-
 p a,
-.para a,
-#wsite-search-list p a {
+.para a {
   color: inherit;
   font-weight: 550;
   text-decoration: underline;
@@ -167,26 +82,18 @@ p a,
 }
 
 div.paragraph a:hover,
-.para a:hover,
-#wsite-search-list div.paragraph a:hover {
-  opacity: 0.75;
-}
-
 p a:hover,
-.para a:hover,
-#wsite-search-list p a:hover {
+.para a:hover {
   opacity: 0.75;
 }
 
 div.paragraph li,
-.para li,
-#wsite-search-list div.paragraph li {
+.para li {
   text-indent: 0;
 }
 
 p li,
-.para li,
-#wsite-search-list p li {
+.para li {
   text-indent: 0;
 }
 
@@ -289,31 +196,6 @@ figcaption {
 img {
   max-width: 100%;
   max-height: 100%;
-}
-
-form label {
-  display: block;
-  margin: 10px 0;
-}
-
-form input,
-form textarea,
-form select {
-  display: block;
-  padding: 10px 20px;
-  margin-bottom: 10px;
-  border: 1px solid gray;
-  background: transparent;
-  width: 100%;
-  max-width: 400px;
-}
-
-form textarea {
-  height: 200 px;
-}
-
-#submit-button {
-  width: 100px;
 }
 
 .splash-page .wsite-background,
@@ -738,155 +620,47 @@ body.splash-page.alt-nav-on .birdseye-header .wsite-phone {
   color: rgba(0, 0, 0, 0.4);
 }
 
-.wsite-form-input,
-.wsite-search-element-input,
-.form-select,
-.wsite-form-field select,
-.wsite-com-product-option-groups select,
-.form-radio-container,
-input[type='radio'],
-input[type='checkbox'] {
-  color: #000000;
+form label {
+  display: block;
+  margin: 10px 0;
+}
+
+.form-required {
+  color: red;
+}
+
+form input,
+form textarea,
+form select {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
-  font-weight: normal;
-  line-height: 1;
+  display: block;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  border: 1px solid gray;
   border-radius: 0;
-  -webkit-transition: all 300ms ease;
-  -moz-transition: all 300ms ease;
-  -ms-transition: all 300ms ease;
+  background: transparent;
+  width: 100%;
+  max-width: 400px;
   transition: all 300ms ease;
 }
 
-.wsite-form-input,
-.wsite-search-element-input,
-.form-select,
-.wsite-form-field select,
-.wsite-com-product-option-groups select {
-  height: auto;
-  max-width: 370px;
-  padding: 10px 20px !important;
-  margin-bottom: 10px;
-  background: transparent;
-  border: 1px solid rgba(0, 0, 0, 0.4);
+form textarea {
+  height: 150px;
 }
 
-input:hover,
-input:focus,
-.form-select:hover,
-.form-select:focus,
-.wsite-form-field select:hover,
-.wsite-form-field select:focus,
-.wsite-com-product-option-groups select:hover,
-.wsite-com-product-option-groups select:focus {
+form #submit-button {
+  width: 100px;
+}
+
+form input:hover,
+form input:focus,
+form textarea:hover,
+form textarea:focus {
   background-color: rgba(0, 0, 0, 0.05);
-  border-color: #000000;
-}
-
-.form-select,
-.wsite-form-field select,
-.wsite-com-product-option-groups select {
-  text-indent: 0.01px;
-  text-overflow: '';
-  height: 40px;
-  background: transparent url(theme/images/select-dropdown.svg?1605792176) 97% center no-repeat;
-}
-
-input[type='radio'],
-input[type='checkbox'] {
-  width: 20px;
-  height: 20px;
-  border: 1px solid rgba(0, 0, 0, 0.4) !important;
-}
-
-input[type='radio']:hover,
-input[type='radio']:checked,
-input[type='checkbox']:hover,
-input[type='checkbox']:checked {
-  border-color: #000000 !important;
-}
-
-input[type='radio'] {
-  border-radius: 100%;
-}
-
-input[type='radio']:after {
-  display: block;
-  border-radius: 100%;
-  box-sizing: border-box;
-  content: '';
-}
-
-input[type='radio']:checked:after {
-  background: #ffffff;
-  border: 4px solid #000000;
-  width: 18px;
-  height: 18px;
-}
-
-input[type='checkbox']:after {
-  position: relative;
-  top: 2px;
-  left: 6px;
-  width: 4px;
-  height: 8px;
-  border: solid #ffffff;
-  border-width: 0 2px 2px 0;
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
-input[type='checkbox']:checked {
-  background: #000000;
-}
-
-input[type='checkbox']:checked:after {
-  display: block;
-  content: ' ';
-}
-
-.wsite-search-element {
-  margin-bottom: 10px;
-}
-
-.wsite-search-element .wsite-search-element-input {
-  margin-bottom: 0;
-}
-
-.wsite-form-label {
-  display: inline-block;
-  padding: 0;
-  color: #000000;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
-  text-transform: uppercase;
-  font-weight: normal;
-  line-height: 1;
-  margin-bottom: 10px;
-}
-
-.wsite-form-sublabel {
-  display: none;
-}
-
-.wsite-form-radio-container {
-  margin-bottom: 15px;
-}
-
-.formlist,
-.wsite-editor .formlist {
-  min-height: inherit;
-}
-
-.wsite-form-container .form-input-error {
-  border: 1px solid red !important;
-}
-
-.form-field-error .wsite-form-radio-container {
-  border: none;
+  border-color: black;
+  outline: none;
 }
 
 .wsite-button {
