@@ -22,7 +22,7 @@
                 <a href="index.html">Home</a>
               </li>
               <li>
-                <a href="about.html">About/Résumé</a>
+                <a href="about.html">About</a>
               </li>
               <li class="has-submenu">
                 <a>Effective Urban Education</a>
@@ -51,31 +51,23 @@
       </header>
       <div class="wsite-header-section"></div>
       <main>
-        <div id="wsite-content" class="wsite-elements">
-          <div class="wsite-section-wrap">
-            <div class="wsite-section wsite-body-section wsite-background-2">
-              <div class="wsite-section-content">
-                <div class="container">
-                  <div class="grid-two-columns">
-                    <div class="half-column">
-                      <h2>Contact Isaac Weiss</h2>
-                      <p>Ask me anything! I'll do my best to get back to you within 24 hours.</p>
-                      <form name="contact" method="post" action="/contact.html" onsubmit="submitContactForm()" netlify>
-                        <label for="name">Name<span class="form-required">*</span></label>
-                        <input type="text" name="name" id="name" required="required" pattern="[a-zA-Z]+\s[a-zA-Z]+" title="Firstname Lastname">
-                        <label for="email">Email address<span class="form-required">*</span></label>
-                        <input type="email" name="email" id="email" required="required">
-                        <label for="comment">Comment or question<span class="form-required">*</span></label>
-                        <textarea name="comment" id="comment" required="required" rows="5"></textarea>
-                        <input type="submit" id="submit-button" value="Submit">
-                      </form>
-                    </div>
-                    <div class="half-column">
-                      <figure id="headshot"><img src="https://github.com/IsaacWeiss/website/blob/master/images/rehearsing-campus-string-orchestra.jpg?raw=true" /></figure>
-                    </div>
-                  </div>
-                </div>
-              </div>
+        <div class="container">
+          <div class="grid-two-columns">
+            <div class="half-column">
+              <h2>Contact Isaac Weiss</h2>
+              <p>Ask me anything! I'll do my best to get back to you within 24 hours.</p>
+              <form name="contact" method="post" action="/contact.html" onsubmit="submitContactForm()" netlify>
+                <label for="name">Name<span class="form-required">*</span></label>
+                <input type="text" name="name" id="name" required="required" pattern="[a-zA-Z]+\s[a-zA-Z]+" title="Firstname Lastname">
+                <label for="email">Email address<span class="form-required">*</span></label>
+                <input type="email" name="email" id="email" required="required">
+                <label for="comment">Comment or question<span class="form-required">*</span></label>
+                <textarea name="comment" id="comment" required="required" rows="5"></textarea>
+                <input type="submit" id="submit-button" value="Submit">
+              </form>
+            </div>
+            <div class="half-column">
+              <figure id="headshot"><img src="https://github.com/IsaacWeiss/website/blob/master/images/rehearsing-campus-string-orchestra.jpg?raw=true" /></figure>
             </div>
           </div>
         </div>
