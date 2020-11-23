@@ -75,7 +75,7 @@ p,
   font-weight: 500;
   line-height: 1.4;
   text-align: justify;
-  color: #515151;
+  color: #444;
   margin: 0 auto;
 }
 
@@ -351,7 +351,7 @@ main .container {
   font-size: 1.5em;
 }
 
-.birdseye-header {
+header {
   position: fixed;
   top: 0;
   z-index: 12;
@@ -369,24 +369,24 @@ main .container {
   -webkit-backface-visibility: hidden;
 }
 
-.birdseye-header .container {
+header .container {
   display: table;
   /*overflow-y: hidden;*/
   width: 100%;
   max-height: 80px;
 }
 
-.birdseye-header .hamburger {
+header .hamburger {
   display: none;
 }
 
-.birdseye-header {
+header {
   display: table-cell;
   /*overflow-y: hidden;*/
   vertical-align: middle;
 }
 
-.birdseye-header a {
+header a {
   /*margin-right: 30px;*/
   -webkit-transition: opacity 200ms ease;
   -moz-transition: opacity 200ms ease;
@@ -394,11 +394,11 @@ main .container {
   transition: opacity 200ms ease;
 }
 
-.birdseye-header .logo a:hover {
+header .logo a:hover {
   opacity: .6;
 }
 
-.birdseye-header #wsite-title {
+header #wsite-title {
   max-width: 400px;
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
@@ -479,35 +479,35 @@ nav li a:hover {
   display: none;
 }
 
-body.affix .birdseye-header {
+body.affix header {
   position: fixed;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
   padding: 10px 40px;
 }
 
-body.affix .birdseye-header,
-body.no-header-page .birdseye-header,
-body.splash-banner-page .birdseye-header {
+body.affix header,
+body.no-header-page header,
+body.splash-banner-page header {
   background: #ffffff;
   color: #000000;
   border-color: #000000;
 }
 
-body.affix .birdseye-header .hamburger span,
-body.affix .birdseye-header .hamburger span:before,
-body.affix .birdseye-header .hamburger span:after,
-body.no-header-page .birdseye-header .hamburger span,
-body.no-header-page .birdseye-header .hamburger span:before,
-body.no-header-page .birdseye-header .hamburger span:after,
-body.splash-banner-page .birdseye-header .hamburger span,
-body.splash-banner-page .birdseye-header .hamburger span:before,
-body.splash-banner-page .birdseye-header .hamburger span:after {
+body.affix header .hamburger span,
+body.affix header .hamburger span:before,
+body.affix header .hamburger span:after,
+body.no-header-page header .hamburger span,
+body.no-header-page header .hamburger span:before,
+body.no-header-page header .hamburger span:after,
+body.splash-banner-page header .hamburger span,
+body.splash-banner-page header .hamburger span:before,
+body.splash-banner-page header .hamburger span:after {
   background: #000000;
 }
 
 
-body.wsite-checkout-page .birdseye-header,
-body.wsite-native-mobile-editor .birdseye-header {
+body.wsite-checkout-page header,
+body.wsite-native-mobile-editor header {
   position: absolute !important;
 }
 
@@ -531,7 +531,7 @@ body.splash-page .banner {
   display: none;
 }
 
-body.splash-page .birdseye-header {
+body.splash-page header {
   top: calc(50% - 132px);
   padding: 40px 80px;
   background: #ffffff;
@@ -539,29 +539,29 @@ body.splash-page .birdseye-header {
   border-color: #000000;
 }
 
-body.splash-page .birdseye-header .container {
+body.splash-page header .container {
   height: 185px;
   max-height: none;
 }
 
-body.splash-page .birdseye-header .logo #wsite-title {
+body.splash-page header .logo #wsite-title {
   font-size: 50px;
 }
 
-body.splash-page .birdseye-header .wsite-phone {
+body.splash-page header .wsite-phone {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   color: rgba(0, 0, 0, 0.6);
   padding-top: 20px;
 }
 
-body.splash-page.alt-nav-on .birdseye-header {
+body.splash-page.alt-nav-on header {
   background: #000000;
   color: #ffffff;
   border-color: #ffffff;
 }
 
-body.splash-page.alt-nav-on .birdseye-header .wsite-phone {
+body.splash-page.alt-nav-on header .wsite-phone {
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -575,6 +575,7 @@ body.splash-page.alt-nav-on .birdseye-header .wsite-phone {
 form label {
   display: block;
   margin: 10px 0;
+  color: #444;
 }
 
 .form-required {
@@ -621,14 +622,12 @@ button {
   padding: 14px 30px;
   color: white;
   background: transparent;
-  border: 2px solid #ffffff;
+  border: 2px solid white;
+  border-radius: 0;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  -webkit-transition: all 100ms ease-in-out;
-  -moz-transition: all 100ms ease-in-out;
-  -ms-transition: all 100ms ease-in-out;
   transition: all 100ms ease-in-out;
 }
 
@@ -665,18 +664,18 @@ button:hover {
   .wsite-footer {
     overflow: hidden;
   }
-  .birdseye-header {
+  header {
     top: 0;
     left: 0;
     padding: 5px 20px !important;
     min-height: 50px;
   }
-  .birdseye-header .birdseye-header,
-  .birdseye-header .container {
+  header header,
+  header .container {
     min-height: 40px;
     max-height: inherit;
   }
-  .birdseye-header label.hamburger {
+  header label.hamburger {
     display: table-cell;
     vertical-align: middle;
   }
@@ -684,18 +683,18 @@ button:hover {
     padding: 50px 0;
     max-height: 100vh;
   }
-  body.nav-open .birdseye-header label.hamburger span {
+  body.nav-open header label.hamburger span {
     position: relative;
     background: transparent;
   }
-  body.nav-open .birdseye-header label.hamburger span:before {
+  body.nav-open header label.hamburger span:before {
     top: 1px;
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
   }
-  body.nav-open .birdseye-header label.hamburger span:after {
+  body.nav-open header label.hamburger span:after {
     top: -1px;
     -webkit-transform: rotate(135deg);
     -moz-transform: rotate(135deg);
@@ -890,7 +889,7 @@ button:hover {
     padding: 30px 20px;
     box-sizing: border-box;
   }
-  .splash-page .birdseye-header {
+  .splash-page header {
     padding: 5px 20px;
   }
   .splash-page label.hamburger {
