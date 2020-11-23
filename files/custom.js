@@ -183,19 +183,6 @@ jQuery(function($) {
                 $me.siblings('.wsite-menu-wrap').addClass('open');
             }
         });
-
-      // Store category dropdown
-      $('.wsite-com-sidebar').expandableSidebar('sidebar-expanded');
-
-      // Search filters dropdown
-      $('#wsite-search-sidebar').expandableSidebar('sidebar-expanded');
-
-      // Init fancybox swipe on mobile
-      if ('ontouchstart' in window) {
-        $('body').on('click', 'a.w-fancybox', function() {
-          base._initSwipeGallery();
-        });
-      }
     },
 
     _initSwipeGallery: function() {
