@@ -250,14 +250,6 @@ img {
   padding: 80px 40px;
 }
 
-.banner-wrap .banner {
-  text-align: center;
-  -webkit-transition: opacity 500ms ease;
-  -moz-transition: opacity 500ms ease;
-  -ms-transition: opacity 500ms ease;
-  transition: opacity 500ms ease;
-}
-
 .banner-wrap h2 {
   color: inherit;
   font-family: "Crete Round", Georgia, serif;
@@ -820,12 +812,6 @@ button:hover {
   }
   font[size="7"] {
     font-size: 150% !important;
-  }
-  .wsite-section {
-    height: auto !important;
-  }
-  .banner-wrap .banner h2 {
-    font-size: 2.5em;
   }
   td.wsite-multicol-col {
     float: none;
