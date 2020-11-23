@@ -288,8 +288,7 @@ img {
   margin: 15px auto;
 }
 
-.container,
-.wsite-footer {
+.container {
   position: relative;
   width: 100%;
   margin: 0 auto;
@@ -304,51 +303,6 @@ main {
 main .container {
   padding: 30px 30px;
   max-width: 1200px;
-}
-
-.footer-wrap {
-  width: 100%;
-  font-size: 14px;
-}
-
-.footer-wrap .wsite-footer {
-  padding: 60px 40px;
-}
-
-.footer-wrap h2,
-.footer-wrap div.paragraph,
-.footer-wrap blockquote {
-  margin: 0 auto 20px;
-}
-
-.footer-wrap h2,
-.footer-wrap p,
-.footer-wrap blockquote {
-  margin: 0 auto 20px;
-}
-
-.footer-wrap h2 {
-  font-size: 20px;
-}
-
-.footer-wrap div.paragraph {
-  font-size: 14px;
-}
-
-.footer-wrap p {
-  font-size: 14px;
-}
-
-.footer-wrap blockquote {
-  font-size: 14px;
-  background: transparent;
-  padding: 0 0 0 1em;
-}
-
-.footer-wrap blockquote:before {
-  top: 0;
-  left: 0;
-  font-size: 1.5em;
 }
 
 header {
@@ -411,6 +365,17 @@ header #wsite-title {
   -moz-transition: font-size 260ms ease;
   -ms-transition: font-size 260ms ease;
   transition: font-size 260ms ease;
+}
+
+footer {
+  width: 100%;
+  background-color: #ccc;
+  border-top: 2px solid darkgray;
+}
+footer p {
+  font-size: 90%;
+  text-align: center;
+  padding: 20px;
 }
 
 nav {
@@ -660,8 +625,7 @@ button:hover {
   font[size="7"] {
     font-size: 250% !important;
   }
-  .container,
-  .wsite-footer {
+  .container {
     overflow: hidden;
   }
   header {
@@ -883,11 +847,6 @@ button:hover {
   }
   main .container {
     padding: 30px 20px;
-  }
-  .footer-wrap .wsite-footer {
-    width: 100%;
-    padding: 30px 20px;
-    box-sizing: border-box;
   }
   .splash-page header {
     padding: 5px 20px;
