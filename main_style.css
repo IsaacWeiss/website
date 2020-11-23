@@ -513,10 +513,6 @@ button:hover, .button:hover {
     font-size: 32px;
   }
   
-  body.nav-open .mobile-nav {
-    padding: 50px 0;
-    max-height: 100vh;
-  }
   body.nav-open header label.hamburger span {
     position: relative;
     background: transparent;
@@ -582,9 +578,6 @@ button:hover, .button:hover {
     margin-top: 45px; /* I would think 50, but this is what works */
     display: none; /* by default only */
   }
-  body.nav-open nav {
-    display: block;
-  }
   nav ul {
     float: none;
     max-width: none;
@@ -603,7 +596,8 @@ button:hover, .button:hover {
     padding: 10px 0;
     width: 100%;
   }
-  .has-submenu {
+  .has-submenu:hover .submenu {
+    display: none; /* hovering is great for desktop, mobile will use click instead (JS) */
   }
   .submenu {
     position: relative; /* include in flow again */ 
