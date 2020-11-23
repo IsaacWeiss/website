@@ -596,6 +596,12 @@ button:hover, .button:hover {
     padding: 10px 0;
     width: 100%;
   }
+  .has-submenu > a:after {
+    content: "\25bc";
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+  }
   .has-submenu:hover .submenu {
     display: none; /* hovering is great for desktop, mobile will use click instead (JS) */
   }
