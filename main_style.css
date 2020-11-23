@@ -207,7 +207,6 @@ img {
   max-height: 100%;
 }
 
-.splash-page .wsite-background,
 .wsite-header-section {
   height: 200px;
   background-image: url(images/banner.jpg);
@@ -451,8 +450,7 @@ body.affix header {
 }
 
 body.affix header,
-body.no-header-page header,
-body.splash-banner-page header {
+body.no-header-page header {
   background: #ffffff;
   color: #000000;
   border-color: #000000;
@@ -463,71 +461,8 @@ body.affix header .hamburger span:before,
 body.affix header .hamburger span:after,
 body.no-header-page header .hamburger span,
 body.no-header-page header .hamburger span:before,
-body.no-header-page header .hamburger span:after,
-body.splash-banner-page header .hamburger span,
-body.splash-banner-page header .hamburger span:before,
-body.splash-banner-page header .hamburger span:after {
+body.no-header-page header .hamburger span:after {
   background: #000000;
-}
-
-
-body.wsite-checkout-page header,
-body.wsite-native-mobile-editor header {
-  position: absolute !important;
-}
-
-body.splash-page .banner-wrap {
-  display: table;
-  width: 100%;
-  height: 100vh;
-}
-
-body.splash-page .banner {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-}
-
-body.splash-page .footer-wrap {
-  display: none;
-}
-
-body.splash-page .banner {
-  display: none;
-}
-
-body.splash-page header {
-  top: calc(50% - 132px);
-  padding: 40px 80px;
-  background: #ffffff;
-  color: #000000;
-  border-color: #000000;
-}
-
-body.splash-page header .container {
-  height: 185px;
-  max-height: none;
-}
-
-body.splash-page header .logo #wsite-title {
-  font-size: 50px;
-}
-
-body.splash-page header .wsite-phone {
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  color: rgba(0, 0, 0, 0.6);
-  padding-top: 20px;
-}
-
-body.splash-page.alt-nav-on header {
-  background: #000000;
-  color: #ffffff;
-  border-color: #ffffff;
-}
-
-body.splash-page.alt-nav-on header .wsite-phone {
-  color: rgba(255, 255, 255, 0.6);
 }
 
  ::-webkit-input-placeholder,
@@ -664,9 +599,6 @@ button:hover {
     -moz-transform: rotate(135deg);
     -ms-transform: rotate(135deg);
     transform: rotate(135deg);
-  }
-  body.splash-page.nav-open .wrapper main {
-    position: relative;
   }
   label.hamburger {
     position: absolute;
@@ -848,22 +780,6 @@ button:hover {
   main .container {
     padding: 30px 20px;
   }
-  .splash-page header {
-    padding: 5px 20px;
-  }
-  .splash-page label.hamburger {
-    right: 20px;
-    top: 10px;
-  }
-  .splash-page h2 {
-    font-size: 2.5em;
-  }
-  .splash-page div.paragraph {
-    font-size: 16px;
-  }
-  .splash-page p {
-    font-size: 16px;
-  }
 }
 
 @media screen and (max-width: 767px) {
@@ -916,22 +832,6 @@ button:hover {
     display: block;
     width: 100% !important;
     box-sizing: border-box;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  #wsite-com-checkout-list .wsite-com-checkout-item-image,
-  #wsite-com-checkout-summary-list .wsite-com-checkout-item-image {
-    display: none;
-  }
-  #wsite-com-checkout-list tbody td:first-child,
-  #wsite-com-checkout-summary-list tbody td:first-child {
-    width: 0;
-    padding: 0;
-  }
-  #wsite-com-checkout-list .wsite-com-checkout-item-details-inner,
-  #wsite-com-checkout-summary-list .wsite-com-checkout-item-details-inner {
-    padding-left: 0;
   }
 }
 
