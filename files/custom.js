@@ -13,19 +13,6 @@ jQuery(function($) {
             this.removeClass(scrollClass);
         }
     };
-  
-  // Mobile sidebars
-  $.fn.expandableSidebar = function(expandedClass) {
-    var $me = this;
-
-    $me.on('click', function() {
-      if(!$me.hasClass(expandedClass)) {
-        $me.addClass(expandedClass);
-      } else {
-        $me.removeClass(expandedClass);
-      }
-    });
-  }
 
   // Interval loop
   $.fn.intervalLoop = function(condition, action, duration, limit) {
@@ -55,54 +42,12 @@ jQuery(function($) {
       base._addClasses();
 
       setTimeout(function(){
-        base._checkCartItems();
         base._attachEvents();
-        if($('#wsite-nav-cart-a').length) {
-          $('#wsite-nav-cart-a').html($('#wsite-nav-cart-a').html().replace(/[()]/g, ''));
-        }
       }, 1000);
     },
 
     _addClasses: function() {
       var base = this;
-
-      // Add fade in class to nav + logo + banner
-        $('body').addClass('fade-in');
-
-      // Add class to nav items with subnav
-      $('.wsite-menu-default').find('li.wsite-menu-item-wrap').each(function(){
-        var $me = $(this);
-
-        if($me.children('.wsite-menu-wrap').length > 0) {
-          $me.addClass('has-submenu');
-          $('<span class="icon-caret"></span>').insertAfter($me.children('a.wsite-menu-item'));
-        }
-      });
-
-      // Add class to subnav items with subnav
-      $('.wsite-menu').find('li.wsite-menu-subitem-wrap').each(function(){
-        var $me = $(this);
-
-        if($me.children('.wsite-menu-wrap').length > 0) {
-          $me.addClass('has-submenu');
-          $('<span class="icon-caret"></span>').insertAfter($me.children('a.wsite-menu-subitem'));
-        }
-      });
-
-      // Add placeholder text to inputs
-      $('.wsite-form-sublabel').each(function(){
-        var sublabel = $(this).text();
-        $(this).prev('.wsite-form-input').attr('placeholder', sublabel);
-      });
-    },
-
-    _checkCartItems: function() {
-      var base = this;
-      if($('#wsite-mini-cart').find('li.wsite-product-item').length > 0) {
-        $('body').addClass('cart-full');
-      } else {
-        $('body').removeClass('cart-full');
-      }
     },
 
     _attachEvents: function() {

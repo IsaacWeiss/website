@@ -126,6 +126,7 @@ blockquote:before {
 .logo {
   font-family: "Crete Round", Georgia, serif;
   font-size: 40px;
+  float: left;
 }
 .indent {
   text-indent: 30px;
@@ -250,36 +251,6 @@ section {
   height: 15px;
 }
 
-.banner-wrap {
-  position: relative;
-  height: 100%;
-  background: #000000;
-  color: #ffffff;
-}
-
-.banner-wrap .container {
-  padding: 80px 40px;
-}
-
-.banner-wrap h2 {
-  color: inherit;
-  font-family: "Crete Round", Georgia, serif;
-  font-size: 80px;
-  font-weight: 100;
-  line-height: 1.15;
-  margin: 15px auto;
-}
-
-.banner-wrap p {
-  color: inherit;
-  font-family: "Montserrat", sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 1.15;
-  letter-spacing: 0.15em;
-  margin: 15px auto;
-}
-
 .container {
   position: relative;
   width: 100%;
@@ -296,25 +267,16 @@ header {
   position: fixed;
   top: 0;
   z-index: 12;
+  height: 70px;
   width: 100%;
   max-width: 100%;
   padding: 20px 40px;
   color: #ffffff;
   border-color: #ffffff;
   box-sizing: border-box;
-  -webkit-transition: background-color 300ms ease, color 260ms ease, padding 180ms ease;
-  -moz-transition: background-color 300ms ease, color 260ms ease, padding 180ms ease;
-  -ms-transition: background-color 300ms ease, color 260ms ease, padding 180ms ease;
   transition: background-color 300ms ease, color 260ms ease, padding 180ms ease;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
-}
-
-header .container {
-  display: table;
-  /*overflow-y: hidden;*/
-  width: 100%;
-  max-height: 80px;
 }
 
 header .hamburger {
@@ -365,15 +327,9 @@ footer p {
   padding: 20px;
 }
 
-nav {
-  display: table-cell;
-  vertical-align: middle;
-}
-
 nav ul {
   float: right;
-  max-width: calc(100vw - 480px);
-  overflow: hidden;
+  max-width: calc(100vw - 150px);
 }
 
 nav li {
@@ -401,7 +357,7 @@ nav li a:hover {
   opacity: 0.6;
 }
 
-.desktop-nav .submenu { /*TODO: remove desktop-nav */
+.submenu {
   display: none;
   position: absolute;
   color: black;
@@ -423,12 +379,8 @@ nav li a:hover {
   background: rgba(0, 0, 0, 0.1);
 }
 
-.desktop-nav .has-submenu:hover .submenu {
+.has-submenu:hover .submenu {
   display: block;
-}
-
-.mobile-nav {
-  display: none;
 }
 
 body.affix header {
@@ -555,17 +507,12 @@ button:hover, .button:hover {
     top: 0;
     left: 0;
     padding: 5px 20px !important;
-    min-height: 50px;
+    height: 50px;
   }
-  header header,
-  header .container {
-    min-height: 40px;
-    max-height: inherit;
+  header .logo {
+    font-size: 32px;
   }
-  header label.hamburger {
-    display: table-cell;
-    vertical-align: middle;
-  }
+  
   body.nav-open .mobile-nav {
     padding: 50px 0;
     max-height: 100vh;
@@ -589,9 +536,10 @@ button:hover, .button:hover {
     transform: rotate(135deg);
   }
   label.hamburger {
+    display: block;
     position: absolute;
-    top: -5px;
-    right: -10px;
+    top: 0;
+    right: 10px;
     width: 30px;
     height: 30px;
     padding: 10px;
@@ -626,145 +574,42 @@ button:hover, .button:hover {
   label.hamburger span:after {
     bottom: -6px;
   }
-  
-  .desktop-nav {
-    display: none;
+
+  nav {
+    width: 100vw;
+    margin-left: -20px; /* counteract 20px margin from header */
+    clear: both;
+    margin-top: 45px; /* I would think 50, but this is what works */
+    display: none; /* by default only */
   }
-  .mobile-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 12;
+  body.nav-open nav {
     display: block;
-    overflow-x: hidden;
-    overflow-y: auto;
-    width: 100%;
-    height: 100%;
-    max-height: 0;
-    padding: 0;
-    background: #ffffff;
-    box-sizing: border-box;
-    -webkit-transition: all 300ms cubic-bezier(0, 0.085, 0.68, 0.53);
-    -moz-transition: all 300ms cubic-bezier(0, 0.085, 0.68, 0.53);
-    -ms-transition: all 300ms cubic-bezier(0, 0.085, 0.68, 0.53);
-    transition: all 300ms cubic-bezier(0, 0.085, 0.68, 0.53);
   }
-  .mobile-nav label.hamburger {
-    top: 0;
-    right: 10px;
-  }
-  .mobile-nav label.hamburger span {
-    background: transparent;
-  }
-  .mobile-nav label.hamburger span:before {
-    top: 1px;
-    background: #000000;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
-  .mobile-nav label.hamburger span:after {
-    top: -1px;
-    background: #000000;
-    -webkit-transform: rotate(135deg);
-    -moz-transform: rotate(135deg);
-    -ms-transform: rotate(135deg);
-    transform: rotate(135deg);
-  }
-  .mobile-nav ul {
+  nav ul {
     float: none;
-    height: auto;
     max-width: none;
+    color: black;
+    background-color: white;
   }
-  .mobile-nav li {
-    position: relative;
-    display: block !important;
-    margin: 0;
-    border: none;
+  nav li {
+    display: block; /* vertical stack instead of horizontal */
+    font-size: 130%;
     text-align: center;
+    margin: 0;
   }
-  .mobile-nav li .wsite-menu-link-styles {
-    position: relative;
+  nav a {
+    width: inherit;
+    border-top: 1px solid black;
     padding: 10px 0;
-    border: none;
+    width: 100%;
   }
-  .mobile-nav li>a.wsite-menu-item {
-    position: relative;
-    padding: 10px 0;
-    border: none;
+  .has-submenu {
   }
-  .mobile-nav li>a.wsite-menu-subitem {
-    display: block;
-    position: relative;
-    padding: 10px 0;
-    color: rgba(0, 0, 0, 0.6);
-    border: none;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1;
-    -webkit-transition: all 300ms ease;
-    -moz-transition: all 300ms ease;
-    -ms-transition: all 300ms ease;
-    transition: all 300ms ease;
+  .submenu {
+    position: relative; /* include in flow again */ 
+    box-shadow: none;
   }
-  .mobile-nav li .wsite-menu-wrap {
-    display: block !important;
-    overflow: hidden;
-    max-height: 0;
-    -webkit-transition: all 500ms ease-in-out 250ms;
-    -moz-transition: all 500ms ease-in-out 250ms;
-    -ms-transition: all 500ms ease-in-out 250ms;
-    transition: all 500ms ease-in-out 250ms;
-  }
-  .mobile-nav li .wsite-menu-wrap li.wsite-nav-current>a.wsite-menu-subitem {
-    background: rgba(0, 0, 0, 0.05);
-    border: none;
-  }
-  .mobile-nav li.wsite-menu-item-wrap#active>a.wsite-menu-item,
-  .mobile-nav li.wsite-menu-item-wrap>a.wsite-menu-item:hover,
-  .mobile-nav li.wsite-menu-subitem-wrap>a.wsite-menu-subitem:hover {
-    background: rgba(0, 0, 0, 0.05);
-    border: none;
-  }
-  .mobile-nav li.has-submenu>span.icon-caret {
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: block;
-    width: 20px;
-    height: 20px;
-    padding: 5px 20px;
-    cursor: pointer;
-    -webkit-transition: all 300ms ease-in-out;
-    -moz-transition: all 300ms ease-in-out;
-    -ms-transition: all 300ms ease-in-out;
-    transition: all 300ms ease-in-out;
-  }
-  .mobile-nav li.has-submenu>span.icon-caret:before {
-    position: relative;
-    display: block;
-    color: #000000;
-    font-size: 24px;
-    content: "\203A";
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
-  }
-  .mobile-nav li.has-submenu .wsite-menu-wrap.open {
-    max-height: 1000px;
-  }
-  .mobile-nav li.wsite-nav-more {
-    display: none !important;
-  }
-  .banner-wrap .container {
-    padding: 60px 20px;
-    word-wrap: break-word;
-  }
-  .banner-wrap .container h2 {
-    font-size: 50px;
-  }
+  
   main .container {
     padding: 30px 20px;
   }
