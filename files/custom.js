@@ -1,3 +1,5 @@
+"use strict";
+
 jQuery(function ($) {
 
   // sticky header helper function

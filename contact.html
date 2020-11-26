@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="main_style.css?1605792176" title="wsite-theme-css" />
+    <link rel="stylesheet" type="text/css" href="main_style.css" />
+    <link rel="stylesheet" type="text/css" href="lightbox2/lightbox.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
   </head>
   <body>
@@ -54,9 +55,9 @@
             <div class="half-column">
               <h2>Contact Isaac Weiss</h2>
               <p>Ask me anything! I'll do my best to get back to you within 24 hours.</p>
-              <form name="contact" method="post" action="/contact.html" onsubmit="submitContactForm()" netlify>
+              <form name="contact" method="post" netlify>
                 <label for="name">Name<span class="form-required">*</span></label>
-                <input type="text" name="name" id="name" required="required" pattern="[a-zA-Z]+\s[a-zA-Z]+" title="Firstname Lastname">
+                <input type="text" name="name" id="name" required="required">
                 <label for="email">Email address<span class="form-required">*</span></label>
                 <input type="email" name="email" id="email" required="required">
                 <label for="comment">Comment or question<span class="form-required">*</span></label>
@@ -65,7 +66,11 @@
               </form>
             </div>
             <div class="half-column">
-              <figure id="headshot"><img src="https://github.com/IsaacWeiss/website/blob/master/images/rehearsing-campus-string-orchestra.jpg?raw=true" /></figure>
+              <figure id="headshot">
+                <a href="images/rehearsing-campus-string-orchestra.jpg" data-lightbox="rehearsing-cso">
+                  <img src="images/rehearsing-campus-string-orchestra.jpg" />
+                </a>
+              </figure>
             </div>
           </div>
         </div>
@@ -75,5 +80,6 @@
       </footer>
     </div>
     <script type="text/javascript" src="files/custom.js"></script>
+    <script type="text/javascript" src="lightbox2/lightbox.js"></script>
   </body>
 </html>
