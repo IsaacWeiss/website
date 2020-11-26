@@ -459,27 +459,6 @@ button:hover, .button:hover {
   #headshot {
     width: 90%;
   }
-  font[size="1"] {
-    font-size: 50% !important;
-  }
-  font[size="2"] {
-    font-size: 75% !important;
-  }
-  font[size="3"] {
-    font-size: 125% !important;
-  }
-  font[size="4"] {
-    font-size: 150% !important;
-  }
-  font[size="5"] {
-    font-size: 175% !important;
-  }
-  font[size="6"] {
-    font-size: 200% !important;
-  }
-  font[size="7"] {
-    font-size: 250% !important;
-  }
   .container {
     overflow: hidden;
   }
@@ -614,27 +593,6 @@ button:hover, .button:hover {
   }
   .grid-two-columns {
     grid-template-columns: 1fr;
-  }
-  font[size="1"] {
-    font-size: 50% !important;
-  }
-  font[size="2"] {
-    font-size: 75% !important;
-  }
-  font[size="3"] {
-    font-size: 110% !important;
-  }
-  font[size="4"] {
-    font-size: 120% !important;
-  }
-  font[size="5"] {
-    font-size: 130% !important;
-  }
-  font[size="6"] {
-    font-size: 140% !important;
-  }
-  font[size="7"] {
-    font-size: 150% !important;
   }
   .banner-image {
     height: 120px;
