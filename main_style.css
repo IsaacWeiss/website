@@ -372,23 +372,16 @@ nav li a:hover {
 
 body.affix header {
   position: fixed;
+  color: black;
+  background: white;
+  border-color: black;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
   padding: 10px 40px;
 }
 
-body.affix header,
-body.no-header-page header {
-  background: #ffffff;
-  color: #000000;
-  border-color: #000000;
-}
-
 body.affix header .hamburger span,
 body.affix header .hamburger span:before,
-body.affix header .hamburger span:after,
-body.no-header-page header .hamburger span,
-body.no-header-page header .hamburger span:before,
-body.no-header-page header .hamburger span:after {
+body.affix header .hamburger span:after {
   background: #000000;
 }
 
@@ -500,6 +493,8 @@ button:hover, .button:hover {
     font-size: 32px;
   }
   
+  /* hamburger: hide middle bar, rotate before and after into X */
+  /* nav-open class added to body by JavaScript */
   body.nav-open header label.hamburger span {
     position: relative;
     background: transparent;
@@ -563,7 +558,7 @@ button:hover, .button:hover {
     margin-left: -20px; /* counteract 20px margin from header */
     clear: both;
     margin-top: 45px; /* I would think 50, but this is what works */
-    display: none; /* by default only */
+    display: none; /* until slideToggled by JS */
   }
   nav ul {
     float: none;
