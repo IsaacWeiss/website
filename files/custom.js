@@ -18,7 +18,7 @@ jQuery(function ($) {
     init: function () {
       var base = this;
 
-      $('body').checkHeaderPositioning(window, 'affix');
+      $("body").checkHeaderPositioning(window, "affix");
 
       setTimeout(function () {
         base._attachEvents();
@@ -28,27 +28,27 @@ jQuery(function ($) {
     _attachEvents: function () {
 
       // mobile nav toggle
-      $('label.hamburger').on('click', function () {
+      $("label.hamburger").on("click", function () {
         $("nav").slideToggle("fast");
 
         // change hamburger to X
-        if (!$('body').hasClass('nav-open')) {
-          $('body').addClass('nav-open');
+        if (!$("body").hasClass("nav-open")) {
+          $("body").addClass("nav-open");
         } else {
-          $('body').removeClass('nav-open');
+          $("body").removeClass("nav-open");
         }
       });
 
       // mobile subnav toggle
       if ($(window).width() < 992) {
-        $('li.has-submenu').on('click', function () {
+        $("li.has-submenu").on("click", function () {
           $(".submenu").slideToggle("fast");
         });
       }
 
       // keep sticky header
-      $(window).on('scroll', function () {
-        $('body').checkHeaderPositioning(window, 'affix');
+      $(window).on("scroll", function () {
+        $("body").checkHeaderPositioning(window, "affix");
       });
     }
   }
@@ -61,6 +61,6 @@ jQuery(function ($) {
   $(window).resize(function () {
     $("nav").css("display", "");
     $(".submenu").css("display", ""); 
-    $('body').removeClass('nav-open');
+    $("body").removeClass("nav-open");
   });
 });
