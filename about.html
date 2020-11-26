@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="main_style.css?1605792176" title="wsite-theme-css" />
+    <link rel="stylesheet" type="text/css" href="main_style.css" />
+    <link rel="stylesheet" type="text/css" href="lightbox2/lightbox.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
   </head>
   <body>
@@ -53,7 +54,11 @@
           <div class="container">
             <div class="columns">
               <div class="half-column" style="display: flex; justify-content: center; align-items: center;">
-                <figure id="headshot"><img src="images/headshot.jpg"/></figure>
+                <figure id="headshot">
+                  <a href="images/headshot.jpg" data-lightbox="headshot">
+                    <img src="images/headshot.jpg"/>
+                  </a>
+                </figure>
               </div>
               <div class="half-column">
                 <h2>A little about myself</h2>
@@ -72,7 +77,9 @@
         <section class="section-1">
           <div class="container">
             <figure id="warrior-strong" class="float-right">
-              <img src="images/warrior-strong-poster.jpg" />
+              <a href="images/warrior-strong-poster.jpg" data-lightbox="warrior-strong-poster" data-title="Poster from Wayne State University Department of Music">
+                <img src="images/warrior-strong-poster.jpg" />
+              </a>
               <figcaption>Poster from Wayne State University Department of Music</figcaption>
             </figure>
             <h2>Why I chose to become a teacher</h2>
@@ -90,7 +97,9 @@
           <div class="container">
             <h2>My philosophy of education</h2>
             <figure id="mask-wearing" class="float-right">
-              <img src="images/teaching-wearing-mask.jpg" />
+              <a href="images/teaching-wearing-mask.jpg" data-lightbox="teaching-wearing-mask" data-title="Teaching during COVID-19">
+                <img src="images/teaching-wearing-mask.jpg" />
+              </a>
               <figcaption>Teaching during COVID-19</figcaption>
             </figure>
             <p class="indent">Learning cannot happen without internal motivation on the part of the learner. Wanting to get good grades is not the same as wanting to learn&mdash;students quickly forget material they were not interested in after the exams are done. Therefore, the first concern of teachers must be fostering their students’ <em>desire</em> to learn&mdash;to ascertain the students' level of interest, and, if it is low, figure out how to show them that the given subject is fascinating and enjoyable.</p>
@@ -106,5 +115,6 @@
     </div>
     <!-- /.wrapper -->
     <script type="text/javascript" src="files/custom.js"></script>
+    <script type="text/javascript" src="lightbox2/lightbox.js"></script>
   </body>
 </html>
