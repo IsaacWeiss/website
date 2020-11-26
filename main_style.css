@@ -1,6 +1,8 @@
 * {
   margin: 0;
   padding: 0;
+  --text-color: #444;
+  --link-color: #359;
 }
 
 .iframe-container {
@@ -82,19 +84,20 @@ p {
   font-weight: 500;
   line-height: 1.4;
   text-align: justify;
-  color: #444;
+  color: var(--text-color);
   margin: 0 auto;
 }
 
 p a {
-  color: inherit;
-  font-weight: 550;
+  color: var(--link-color);
+  opacity: 1;  
   text-decoration: underline;
-  transition: opacity 300ms ease-in-out;
+  text-decoration-color: #abd; /* lighter version of link-color */
+  transition: all 200ms ease-in-out;
 }
 
 p a:hover {
-  opacity: 0.75;
+  text-decoration-color: var(--link-color);
 }
 
 p li {
@@ -284,7 +287,7 @@ header {
   color: #ffffff;
   border-color: #ffffff;
   box-sizing: border-box;
-  transition: background-color 300ms ease, color 260ms ease, padding 180ms ease;
+  transition: background-color 200ms ease, color 260ms ease, padding 180ms ease;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
 }
@@ -293,15 +296,11 @@ header .hamburger {
   display: none;
 }
 
-header a {
-  /*margin-right: 30px;*/
-  -webkit-transition: opacity 200ms ease;
-  -moz-transition: opacity 200ms ease;
-  -ms-transition: opacity 200ms ease;
+header a, footer a {
   transition: opacity 200ms ease;
 }
 
-header .logo a:hover {
+header .logo a:hover, footer a:hover {
   opacity: .6;
 }
 
@@ -314,6 +313,10 @@ footer p {
   font-size: 90%;
   text-align: center;
   padding: 20px;
+}
+footer a {
+  color: inherit;
+  text-decoration: none;
 }
 
 nav ul {
@@ -336,10 +339,7 @@ nav a {
   line-height: 1;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  -webkit-transition: opacity 300ms ease;
-  -moz-transition: opacity 300ms ease;
-  -ms-transition: opacity 300ms ease;
-  transition: opacity 300ms ease;
+  transition: opacity 200ms ease;
 }
 
 nav li a:hover {
@@ -397,7 +397,7 @@ body.affix header .hamburger span:after {
 form label {
   display: block;
   margin: 10px 0;
-  color: #444;
+  color: var(--text-color);
 }
 
 .form-required {
@@ -418,7 +418,7 @@ form select {
   background: transparent;
   width: 100%;
   max-width: 400px;
-  transition: all 300ms ease;
+  transition: all 200ms ease;
 }
 
 form textarea {
@@ -503,10 +503,7 @@ button:hover, .button:hover {
     height: 30px;
     padding: 10px;
     cursor: pointer;
-    -webkit-transition: all 300ms ease-in-out;
-    -moz-transition: all 300ms ease-in-out;
-    -ms-transition: all 300ms ease-in-out;
-    transition: all 300ms ease-in-out;
+    transition: all 200ms ease-in-out;
   }
   label.hamburger span,
   label.hamburger span:before,
@@ -517,9 +514,6 @@ button:hover, .button:hover {
     height: 2px;
     background: #ffffff;
     content: "";
-    -webkit-transition: all 200ms ease-in-out;
-    -moz-transition: all 200ms ease-in-out;
-    -ms-transition: all 200ms ease-in-out;
     transition: all 200ms ease-in-out;
   }
   label.hamburger span {
