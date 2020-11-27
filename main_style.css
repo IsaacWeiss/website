@@ -132,10 +132,6 @@ blockquote:before {
   float: left;
 }
 
-.columns {
-  display: flex;
-}
-
 .half-column {
   flex: 50%;
 }
@@ -579,23 +575,35 @@ button:hover, .button:hover {
 }
 
 @media screen and (max-width: 767px) {
-  figure,
   #headshot,
   #warrior-strong,
   #mask-wearing,
   #cso-flyer,
   #lesson-video {
     width: 100%;
+    max-width: 300px;
+    float: none;
+    margin: auto;
+  }
+  #mask-wearing, #lesson-video, #cso-flyer {
+    margin: 10px auto;
+  }
+  /* those whose height is less than width need no width limit */
+  /* because the screen already limits their greatest dimension */
+  #mask-wearing, #lesson-video {
+    max-width: none;
+  }
+
+  .grid-two-columns  {
+    grid-template-columns: 1fr;
+  }
+  .grid-two-columns:not(.video-grid) {
+    grid-gap: 0;
   }
   .half-column {
     flex: 100%;
   }
-  .columns {
-    flex-wrap: wrap;
-  }
-  .grid-two-columns {
-    grid-template-columns: 1fr;
-  }
+  
   .banner-image {
     height: 120px;
   }
