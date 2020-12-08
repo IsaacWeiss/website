@@ -25,6 +25,19 @@ body {
   flex-direction: column;
 }
 
+.skip-to-main-content {
+  position: absolute;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.skip-to-main-content:focus {
+  top: 0;
+  left: 0;
+  text-indent: 0;
+}
+
 main {
   width: 100%;
   flex: 1;
@@ -66,6 +79,7 @@ p {
   font-family: Roboto, sans-serif;
   font-size: 16px;
   line-height: 1.4;
+  text-indent: 30px;
   text-align: justify;
   color: var(--text-color);
   margin: 0 auto;
@@ -112,8 +126,8 @@ blockquote:before {
   font-size: 40px;
   float: left;
 }
-.indent {
-  text-indent: 30px;
+.no-indent {
+  text-indent: 0;
 }
 
 .float-right {
@@ -310,6 +324,7 @@ footer {
 footer p {
   font-size: 90%;
   text-align: center;
+  text-indent: 0; /* override default p */
   padding: 20px;
 }
 footer a {
