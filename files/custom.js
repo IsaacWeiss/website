@@ -20,7 +20,7 @@ jQuery(function ($) {
     init: function () {
       var base = this;
 
-      $("body").checkHeaderPositioning(window, "affix");
+      $("body").checkHeaderPositioning(window, "sticky-header");
 
       setTimeout(function () {
         base._attachEvents();
@@ -50,7 +50,7 @@ jQuery(function ($) {
 
       // keep sticky header
       $(window).on("scroll", function () {
-        $("body").checkHeaderPositioning(window, "affix");
+        $("body").checkHeaderPositioning(window, "sticky-header");
       });
     }
   }
