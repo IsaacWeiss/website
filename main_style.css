@@ -260,12 +260,7 @@ section {
   background-size: cover;
   background-position: top;
 }
-#splash h1 {
-  color: white;
-  text-align: left;
-  font-weight: normal;
-}
-#splash h3 {
+#splash h1, #splash h2, #splash h3 {
   color: white;
   text-align: left;
   font-weight: normal;
