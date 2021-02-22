@@ -85,7 +85,7 @@ p {
   margin: 0 auto;
 }
 
-p a {
+p a, h3 a {
   color: var(--link-color);
   opacity: 1;  
   text-decoration: underline;
@@ -93,7 +93,7 @@ p a {
   transition: all 200ms ease-in-out;
 }
 
-p a:hover {
+p a:hover, h3 a:hover {
   text-decoration-color: var(--link-color);
 }
 
@@ -182,8 +182,9 @@ aside {
 }
 
 .video-caption {
+  text-indent: 0; /* override default p */
   text-align: center;
-  margin-bottom: 5px;
+  margin: 5px 0;
 }
 
 .video-container {
@@ -192,7 +193,7 @@ aside {
   position: relative;
 }
 
-.video-container iframe {
+.video-container iframe, .video-container-portrait iframe {
   border: 0;
   height: 100%;
   left: 0;
