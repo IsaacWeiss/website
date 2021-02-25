@@ -4,12 +4,18 @@
 	<title>The Discourse</title>
 	<language>en-us</language>
 	<link>https://thediscourse2020.medium.com</link>
-	<itunes:summary>Interfaith dialogue taken to the next level. Jewish, Arab (Muslim and Christian), and Black student intellectuals hold deep discussions on diverse topics. Affiliated with Detroit Center for Civil Discourse.</itunes:summary>
+	<itunes:subtitle>Interfaith dialogue taken to the next level</itunes:subtitle>
+	<description>Interfaith dialogue taken to the next level. Jewish, Arab (Muslim and Christian), and Black student intellectuals, members of the Wayne State University Civil Discourse Fellowship, engage in deep discussions on complex issues. Affiliated with Detroit Center for Civil Discourse.</description>
+	<itunes:summary>Jewish, Arab (Muslim and Christian), and Black student intellectuals, members of the Wayne State University Civil Discourse Fellowship, engage in deep discussions on complex issues. Affiliated with Detroit Center for Civil Discourse.</itunes:summary>
 	<itunes:image href="https://isaacweiss.netlify.app/podcast/artwork.png" />
 
 	<itunes:category text="Religion &amp; Spirituality">
 		<itunes:category text="Islam" />
+	</itunes:category>
+	<itunes:category text="Religion &amp; Spirituality">
 		<itunes:category text="Judaism" />
+	</itunes:category>
+	<itunes:category text="Religion &amp; Spirituality">
 		<itunes:category text="Christianity" />
 	</itunes:category>
 	<itunes:category text="Society &amp; Culture">
@@ -28,13 +34,16 @@
 	<!--REPEAT THIS BLOCK FOR EACH EPISODE-->
 	<item>
 		<title>Meet the Discoursers</title>
+		<itunes:title>Meet the Discoursers</itunes:title>
+		<itunes:subtitle>Eriq, Isaac, Reema, and Zakia talk about where they're coming from</itunes:subtitle>
 		<description>Welcome to The Discourse! We are a demographically diverse group of student intellectuals, members of the Wayne State University Civil Discourse Fellowship, committed to having deep, good-faith discussions on complex issues. In this introductory episode, four of us dig into our diverse backgrounds and ideological predispositions.</description>
+		<itunes:summary>Welcome to The Discourse! We are a demographically diverse group of student intellectuals, members of the Wayne State University Civil Discourse Fellowship, committed to having deep, good-faith discussions on complex issues. In this introductory episode, four of us dig into our diverse backgrounds and ideological predispositions.</itunes:summary>
 		<enclosure url="https://isaacweiss.netlify.app/podcast/the-discourse-1-introduction.m4a" type="audio/x-m4a" length="37419532" />
 		<itunes:duration>00:38:32</itunes:duration>
 		<itunes:episode>1</itunes:episode>
 		<pubDate>Thu, 02 Feb 2021 19:00:00 EST</pubDate>
 		<link>https://thediscourse2020.medium.com/the-discourse-1-introduction-484a6e7ca20d</link>
-		</item>
+	</item>
 	<!--END REPEAT-->
 
 </channel>
