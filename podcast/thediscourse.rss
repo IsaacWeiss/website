@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<channel>
+	<title>The Discourse</title>
+	<language>en-us</language>
+	<link>https://thediscourse2020.medium.com</link>
+	<itunes:summary>Interfaith dialogue taken to the next level. Jewish, Arab (Muslim and Christian), and Black student intellectuals hold deep discussions on diverse topics. Affiliated with Detroit Center for Civil Discourse.</itunes:summary>
+	<itunes:image href="https://www.isaacweiss.netlify.app/podcast/artwork.png" />
+
+	<itunes:category text="Religion &amp; Spirituality">
+		<itunes:category text="Islam" />
+		<itunes:category text="Judaism" />
+		<itunes:category text="Christianity" />
+	</itunes:category>
+	<itunes:category text="Society &amp; Culture">
+		<itunes:category text="Philosophy" />
+	</itunes:category>
+
+	<itunes:explicit>false</itunes:explicit>
+
+	<itunes:author>Wayne State University Civil Discourse Fellowship</itunes:author>
+	<itunes:owner>
+		<itunes:name>The Discourse</itunes:name>
+		<itunes:email>thediscourse2020@gmail.com</itunes:email>
+	</itunes:owner>
+	<atom:link href="https://www.isaacweiss.netlify.app/podcast/thediscourse.rss" rel="self" type="application/rss+xml" />
+
+	<!--REPEAT THIS BLOCK FOR EACH EPISODE-->
+	<item>
+		<title>Meet the Discoursers</title>
+		<description>Welcome to The Discourse! We are a demographically diverse group of student intellectuals, members of the Wayne State University Civil Discourse Fellowship, committed to having deep, good-faith discussions on complex issues. In this introductory episode, four of us dig into our diverse backgrounds and ideological predispositions.</description>
+		<enclosure url="https://www.isaacweiss.netlify.app/podcast/the-discourse-1-introduction.m4a" type="audio/x-m4a" length="37419532" />
+		<itunes:duration>00:38:32</itunes:duration>
+		<itunes:episode>1</itunes:episode>
+		<pubDate>Thu, 02 Feb 2021 19:00:00 EST</pubDate>
+		<link>https://thediscourse2020.medium.com/the-discourse-1-introduction-484a6e7ca20d</link>
+		</item>
+	<!--END REPEAT-->
+
+</channel>
+</rss>
