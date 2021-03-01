@@ -45,6 +45,20 @@
 		<link>https://thediscourse2020.medium.com/the-discourse-1-introduction-484a6e7ca20d</link>
 	</item>
 	<!--END REPEAT-->
+	<!--REPEAT THIS BLOCK FOR EACH EPISODE-->
+	<item>
+		<title>Separation of Church and State</title>
+		<itunes:title>Separation of Church and State</itunes:title>
+		<itunes:subtitle>Bilal, Eriq, Isaac, Reema, and Zakia talk about religious freedom and governance</itunes:subtitle>
+		<description>In this episode, we debate the merits of different approaches to religious freedom and governance. We touch on questions of majority and minority religious practice, how the areligious and atheist feel, and the state’s role in threading the needle. NOTE: The Discourse #2 is a text-only discussion that can be found at https://thediscourse2020.medium.com/the-discourse-2-religion-and-politics-6ecd319ffdb7.</description>
+		<itunes:summary>In this episode, we debate the merits of different approaches to religious freedom and governance. We touch on questions of majority and minority religious practice, how the areligious and atheist feel, and the state’s role in threading the needle. NOTE: The Discourse #2 is a text-only discussion that can be found at https://thediscourse2020.medium.com/the-discourse-2-religion-and-politics-6ecd319ffdb7.</itunes:summary>
+		<enclosure url="https://isaacweiss.netlify.app/podcast/the-discourse-3-church-and-state.m4a" type="audio/x-m4a" length="67011252" />
+		<itunes:duration>01:09:03</itunes:duration>
+		<itunes:episode>3</itunes:episode>
+		<pubDate>Thu, 25 Feb 2021 19:00:00 EST</pubDate>
+		<link>https://thediscourse2020.medium.com/the-discourse-3-separation-of-church-and-state-d1b1310f72ac</link>
+	</item>
+	<!--END REPEAT-->
 
 </channel>
 </rss>
