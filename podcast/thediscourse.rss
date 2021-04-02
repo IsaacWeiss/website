@@ -59,6 +59,20 @@
 		<link>https://thediscourse2020.medium.com/the-discourse-3-separation-of-church-and-state-d1b1310f72ac</link>
 	</item>
 	<!--END REPEAT-->
+	<!--REPEAT THIS BLOCK FOR EACH EPISODE-->
+	<item>
+		<title>Misconceptions</title>
+		<itunes:title>Misconceptions</itunes:title>
+		<itunes:subtitle>The Discoursers talk about misconceptions about their different cultural communities</itunes:subtitle>
+		<description>In this episode, we talk about differences in how our communities appear from the inside and outside, and misconceptions that may exist from the external viewpoint. NOTE: the discussion on the historical naming of the Canaan/Israel/Judaea/Palestine/Southern Syria region that occurs in this episode ends on an uncertain note. Subsequently, Isaac and Eriq found that Herodotus, accurately or not, does indeed identify the entire region with Philistia, several hundred years before Roman Judaea.</description>
+		<itunes:summary>In this episode, we talk about differences in how our communities appear from the inside and outside, and misconceptions that may exist from the external viewpoint. NOTE: the discussion on the historical naming of the Canaan/Israel/Judaea/Palestine/Southern Syria region that occurs in this episode ends on an uncertain note. Subsequently, Isaac and Eriq found that Herodotus, accurately or not, does indeed identify the entire region with Philistia, several hundred years before Roman Judaea.</itunes:summary>
+		<enclosure url="https://isaacweiss.netlify.app/podcast/the-discourse-4-misconceptions.m4a" type="audio/x-m4a" length="54142235" />
+		<itunes:duration>01:13:45</itunes:duration>
+		<itunes:episode>4</itunes:episode>
+		<pubDate>Thu, 1 Apr 2021 19:00:00 EST</pubDate>
+		<link>https://thediscourse2020.medium.com/the-discourse-4-misconceptions-3345d2e0fe7a</link>
+	</item>
+	<!--END REPEAT-->
 
 </channel>
 </rss>
