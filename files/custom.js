@@ -30,7 +30,7 @@ jQuery(function ($) {
     _attachEvents: function () {
 
       // mobile nav toggle
-      $("label.hamburger").on("click", function () {
+      $("label.hamburger").click(function () {
         $("nav").slideToggle("fast");
 
         // change hamburger to X
@@ -43,13 +43,13 @@ jQuery(function ($) {
 
       // mobile subnav toggle
       if ($(window).width() < 992) {
-        $("li.has-submenu").on("click", function () {
-          $(".submenu").slideToggle("fast");
+        $("li.has-submenu").click(function() {
+          $(this).find(".submenu").slideToggle("fast");
         });
       }
 
       // keep sticky header
-      $(window).on("scroll", function () {
+      $(window).scroll(function () {
         $("body").checkHeaderPositioning(window, "sticky-header");
       });
     }
@@ -62,7 +62,7 @@ jQuery(function ($) {
   // clean up tags on resize so style sheet media query can take over
   $(window).resize(function () {
     $("nav").css("display", "");
-    $(".submenu").css("display", ""); 
+    $(".submenu").css("display", "");
     $("body").removeClass("nav-open");
   });
 });
