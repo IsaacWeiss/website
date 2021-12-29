@@ -649,7 +649,17 @@ button:hover, .button:hover {
     max-width: none;
   }
 
-  .grid-two-columns  {
+  .post-content figure {
+    width: 100%;
+    margin: 0;
+  }
+  .post-content img {
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+
+  .grid-two-columns {
     grid-template-columns: 1fr;
   }
   .grid-two-columns:not(.video-grid) {
