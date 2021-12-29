@@ -27,7 +27,7 @@ body {
 
 .skip-to-main-content {
   position: absolute;
-  text-indent: 100%;
+  text-indent: 120%;
   white-space: nowrap;
   overflow: hidden;
 }
