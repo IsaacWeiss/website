@@ -651,7 +651,7 @@ button:hover, .button:hover {
 
   .post-content figure {
     width: 100%;
-    margin: 0;
+    margin: 15px 0;
   }
   .post-content img {
     height: auto;
